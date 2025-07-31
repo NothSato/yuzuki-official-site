@@ -5,11 +5,12 @@ import { schemaTypes } from './sanity/schemas'
 
 export default defineConfig({
   name: 'default',
-  title: 'Sanity Blog',
-  projectId: 'hg2k8me9',
-  dataset: 'production',
+  title: 'ゆづき公式ブログ',
+  projectId: process.env.NEXT_PUBLIC_SANITY_PROJECT_ID || 'hg2k8me9',
+  dataset: process.env.NEXT_PUBLIC_SANITY_DATASET || 'production',
   plugins: [structureTool(), visionTool()],
   schema: {
     types: schemaTypes,
   },
+  basePath: '/studio',
 })
