@@ -1,0 +1,33 @@
+{
+  "name": "yuzuki-blog",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "studio": "sanity dev"
+  },
+  "dependencies": {
+    "@portabletext/react": "^3.1.0",
+    "@sanity/client": "6.21.3",
+    "@sanity/image-url": "1.0.2",
+    "@sanity/vision": "3.58.0",
+    "next": "14.2.15",
+    "next-sanity": "9.4.7",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "sanity": "3.58.0"
+  },
+  "devDependencies": {
+    "@types/node": "20.17.8",
+    "@types/react": "18.3.17",
+    "@types/react-dom": "18.3.5",
+    "eslint": "8.57.1",
+    "eslint-config-next": "14.2.15",
+    "postcss": "8.5.1",
+    "tailwindcss": "3.4.1",
+    "typescript": "5.6.3"
+  }
+}
